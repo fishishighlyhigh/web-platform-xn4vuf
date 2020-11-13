@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+		<title>Hamburger Menu Animation</title>
+	</head>
+	<body>
+		<div id="menu-bar">
+			<div id="menu" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<ul class="nav" id="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Habitat</a></li>
+				<li><a href="#">Anatomy</a></li>
+				<li><a href="#">About Me</a></li>
+			</ul>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+		<script src="main.js"></script>
+	</body>
+  <script>
+    function onClickMenu(){
+	  document.getElementById("menu").classList.toggle("change");
+	  document.getElementById("nav").classList.toggle("change");
+	
+	  document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+  </script>
+</html>
